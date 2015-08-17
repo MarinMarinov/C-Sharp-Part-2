@@ -1,4 +1,4 @@
-Homework: Arrays
+﻿Homework: Arrays
 ================
 
 ### Problem 1. Allocate array
@@ -77,7 +77,7 @@ _Example:_
 *	Write a program that sorts an array of integers using the [Merge sort](http://en.wikipedia.org/wiki/Merge_sort) algorithm.
 
 ### Problem 14. Quick sort
-*	Write a program that sorts an array of integers using the [Quick sort](http://en.wikipedia.org/wiki/Quicksort) algorithm.
+*	Write a program that sorts an array of strings using the [Quick sort](http://en.wikipedia.org/wiki/Quicksort) algorithm.
 
 ### Problem 15. Prime numbers
 *	Write a program that finds all prime numbers in the range [`1...10 000 000`]. Use the [Sieve of Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) algorithm.
