@@ -1,0 +1,79 @@
+﻿/*Problem 14. Integer calculations
+
+Write methods to calculate minimum, maximum, average, sum and product of given set of integer numbers.
+Use variable number of arguments.*/
+
+using System;
+using System.Linq;
+
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter how many element will be in your array: ");
+        int n = int.Parse(Console.ReadLine());
+        int[] array = InputArray(n);
+
+        Console.WriteLine("The Minimum of set integers: {0}", Min(array));
+        Console.WriteLine("The Maximum of set integers: {0}", Max(array));
+        Console.WriteLine("The Average Sum of set integers: {0}", CalculateAverageSum(array));
+        Console.WriteLine("The Sum of set integers: {0}", Sum(array));
+        Console.WriteLine("The Product of set integers: {0}\n", CalculateProduct(array));
+    }
+
+    static int[] InputArray(int length)
+    {
+        int[] array = new int[length];
+        for (int i = 0; i < length; i++)
+        {
+            array[i] = int.Parse(Console.ReadLine());
+        }
+        return array;
+    }
+
+    static int Min(params int[] array)
+    {
+        int min = array[0];
+
+        for (int i = 1; i < array.Length; i++)
+        {
+            if (array[i] < min)
+            {
+                min = array[i];
+            }
+        }
+
+        return min;
+    }
+
+    static int Max(params int[] array)
+    {
+        int max = array[0];
+
+        for (int i = 1; i < array.Length; i++)
+        {
+            if (array[i] > max)
+            {
+                max = array[i];
+            }
+        }
+
+        return max;
+    }
+
+    static int Sum(params int[] array)
+    {
+        return array.Sum();
+    }
+
+    static decimal CalculateAverageSum(params int[] numbers)
+    {
+        return (decimal)Sum(numbers) / numbers.Length;
+    }
+
+    static int CalculateProduct(params int[] array)
+    {
+        return array.Aggregate(1, (current, t) => current * t);
+    }
+}
