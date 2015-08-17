@@ -1,2 +1,4 @@
-# C-Sharp-Part-2
-C# Part 2 Course Homeworks
+CSharp-Part-2
+=============
+
+Repository for the course "C# part 2"
