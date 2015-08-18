@@ -1,0 +1,11 @@
+// Note that the names could be several times more than 4 in case of several times starting the program!!!
+----------------------------------------
+George
+Ivan
+Maria
+Peter
+----------------------------------------
+George
+Ivan
+Maria
+Peter
