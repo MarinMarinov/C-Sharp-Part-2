@@ -3,8 +3,6 @@
 Write a program that finds the maximal increasing sequence in an array.*/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 class Program
 {

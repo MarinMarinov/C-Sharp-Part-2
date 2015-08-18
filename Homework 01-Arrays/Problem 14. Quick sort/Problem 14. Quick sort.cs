@@ -4,8 +4,6 @@ Write a program that sorts an array of strings using the Quick sort algorithm.*/
 
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 class Program
 {

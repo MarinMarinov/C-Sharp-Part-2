@@ -4,10 +4,7 @@ Sorting an array means to arrange its elements in increasing order. Write a prog
 Use the Selection sort algorithm: Find the smallest element, move it at the first position, 
 and find the smallest from the rest, move it at the second position, etc.*/
 
-
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 class Program
 {
